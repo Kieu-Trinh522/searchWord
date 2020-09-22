@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let flag= false;
+    let Constellation=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let star=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    // let a=prompt('nhap tu can tim kiem');
+
+    // function searchWord() {
+    //     let index=Constellation.indexOf(a);
+    //     if (index!==-1){
+    //         alert(star[index]);
+    //     }else {
+    //         alert('khong tim duoc tu');
+    //     }
+    // }
+    // searchWord(a);
+    function searchWord() {
+        let result='';
+        let word=prompt('nhap tu can tim kiem');
+        for (let i = 0; i < Constellation.length; i++) {
+            if(word===Constellation[i]){
+                result =star[i];
+                flag=true;
+            }
+
+        }
+        if (flag==true){
+            alert(result);
+        }else {
+            alert('khong tim thay')
+        }
+
+    }
+    searchWord();
+</script>
+</body>
+</html>
